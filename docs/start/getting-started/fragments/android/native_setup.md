@@ -51,6 +51,14 @@ Amplify for Android is distribued as an Apache Maven package. In this section, y
 
     ```groovy
     buildscript {
+        repositories {
+            google()
+            jcenter()
+ 
+            // Add this line into `repositories` in `buildscript`
+            mavenCentral()
+        }
+
         dependencies {
             classpath 'com.android.tools.build:gradle:3.6.3'
 
